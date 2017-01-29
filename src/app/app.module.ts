@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
+import { AppRoutingModule }        from './app-routing.module';
+
 import { MainComponent } from './app.main';
 import { HeaderComponent } from './header/header.component';
 import { ListingComponent } from './listing/listing.component';
 import { FooterComponent } from './footer/footer.component';
 import { FilterSelectionComponent } from './filter-selection/filter-selection.component';
-import { AppLandingComponent } from './app-landing/app-landing.component';
-import { AppListNoticesComponent } from './app-list-notices/app-list-notices.component';
-
-
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -22,10 +22,10 @@ import { AppListNoticesComponent } from './app-list-notices/app-list-notices.com
     ListingComponent,
     FooterComponent,
     FilterSelectionComponent,
-    AppLandingComponent,
-    AppListNoticesComponent
+    LandingComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpModule

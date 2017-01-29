@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 
 
 import { AppRoutingModule }        from './app-routing.module';
@@ -25,6 +26,7 @@ import { LandingComponent } from './landing/landing.component';
     LandingComponent
   ],
   imports: [
+    MaterialModule.forRoot(),
     AppRoutingModule,
     BrowserModule,
     FormsModule,

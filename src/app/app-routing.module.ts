@@ -12,8 +12,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'notices',
-    component: ListingComponent,
-    data: { preload: true }
+    component: ListingComponent
   },
 ];
 

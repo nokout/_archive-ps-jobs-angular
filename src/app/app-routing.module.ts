@@ -15,11 +15,6 @@ const appRoutes: Routes = [
     component: ListingComponent,
     data: { preload: true }
   },
-  {
-    path: 'filters',
-    component: FilterSelectionComponent,
-    data: { preload: true }
-  }
 ];
 
 @NgModule({

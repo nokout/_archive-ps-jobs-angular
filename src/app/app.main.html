@@ -1,8 +1,9 @@
 <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
 
-  <md-sidenav #sidenav mode="push" class="app-sidenav">
+  <md-sidenav #sidenav mode="push" align="end" class="app-sidenav">
     <app-filter-selection (onToggle)="sidenav.toggle()">Loading Filtering...</app-filter-selection>
   </md-sidenav>
+
   <app-header (onToggle)="sidenav.toggle()">Loading Header...</app-header>
 
   <router-outlet></router-outlet>

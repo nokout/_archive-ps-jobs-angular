@@ -1,12 +1,13 @@
-<ul>
-  <li *ngFor="let notice of notices">
-    <div>
-      <span> {{notice.title}}</span>
-      <span> {{notice.classification}}</span>
-      <span> {{notice.salary}}</span>
-      <span> {{notice.location}}</span>
-      <hr />
+<md-list>
+  <md-list-item *ngFor="let notice of notices">
+      <div class='list-item-avatar' [ngClass]='notice.organisation'>
+        {{notice.organisation}}
+      </div>
+    <div list-item-content>
+      <h2 md-line> {{notice.title}}</h2>
+      <p md-line> {{notice.classification}}</p>
+      <p md-line> {{notice.salary}}</p>
+      <p md-line> {{notice.location}}</p>
     </div>
-
-  </li>
-</ul>
+  </md-list-item>
+</md-list>

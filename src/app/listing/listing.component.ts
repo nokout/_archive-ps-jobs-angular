@@ -12,19 +12,23 @@ export class ListingComponent implements OnInit {
       title: 'Business Analyst',
       classification: ['EL2', 'EL1', 'APS6'],
       salary: '$55-75K',
-      location: ['here', 'there', 'everywhere']
-    },
+      location: ['here', 'there', 'everywhere'],
+      organisation: 'DHS'
+       },
     {
       title: 'Systems Analyst',
       classification: ['EL2', 'EL1', 'APS6'],
       salary: '$55-75K',
-      location: ['here', 'there', 'everywhere']
-    },
+      location: ['here', 'there', 'everywhere'],
+      organisation: 'XX'
+      },
     {
       title: 'Analyst Programmer',
       classification: ['EL2', 'EL1', 'APS6'],
       salary: '$55-75K',
-      location: ['here', 'there', 'everywhere']
+      location: ['here', 'there', 'everywhere'],
+      organisation: 'AFP'
+
     }
 
   ]
